@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 /* =========== */
 
-/* Params */
+/* === Params === */
 html {
   font-size: 100%;
 }
@@ -65,18 +65,25 @@ i {
   margin: 0.3rem 0.9rem;
   display: flex;
 }
+
+
 :root {
+    
   /* Variable font logo*/
   --ff-logo: "Josefin Sans", sans-serif;
   --ff-text: "Poppins", sans-serif;
+
   /* Color */
   --color-prim: #4caf50;
   --color-textWhite: #fff;
+
   /* Background Color  */
   --bg-color-nav: #353535;
 }
+/* ====================== */
 
-/* ====== */
+
+/* === HEADER === */
 * {
   margin: 0;
   padding: 0;
@@ -153,6 +160,7 @@ a:hover > i {
   position: absolute;
   top: 0;
   left: 10%;
+  color: var(--color-textWhite);
 }
 
 nav{
