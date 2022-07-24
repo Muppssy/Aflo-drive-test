@@ -10,7 +10,7 @@ html {
 
 nav{
     background-color: var(--bg-color-nav);
-    height: 7vh;
+    height: 5vh;
     border-top: 1px solid gray;
     
 
@@ -46,6 +46,7 @@ input {
   padding: 0;
   border-width: 0;
   border-style: none;
+  border-radius: 9px 0px 0 9px;
 }
 
 button {
@@ -55,14 +56,18 @@ button {
 
 a {
   display: flex;
-  padding: 1rem;
+ 
   text-decoration: none;
   color: var(--color-textWhite);
   font-family: var(--ff-text);
 }
 
+.log, .user{
+  padding: 0 1rem 0 0;
+}
+
 i {
-  margin: 0.3rem 0.9rem;
+  margin: 0.3rem 0.3rem;
   display: flex;
 }
 
@@ -101,6 +106,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .container_nav .block_logo {
@@ -143,9 +149,10 @@ header {
 
 .block_account {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 22%;
 }
 
 .cart {
@@ -158,8 +165,8 @@ a:hover > i {
 
 .item_number {
   position: absolute;
-  top: 0;
-  left: 10%;
+  top: -60%;
+  left: -15%;
   color: var(--color-textWhite);
 }
 
@@ -169,16 +176,16 @@ nav{
 }
 
 .block_nav{
-    background-color: var(--color-prim) ;
-    width: 20%;
+    background-color: var(--color-prim);
+    width: 21%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: var(--color-textWhite);
     cursor: pointer;
-    
+    padding: 1rem;
 }
 
 .block_nav p {
@@ -190,6 +197,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     color: var(--color-textWhite);
     text-align: center;
     width: 32%;
