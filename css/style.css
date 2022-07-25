@@ -46,7 +46,7 @@ input {
   padding: 0;
   border-width: 0;
   border-style: none;
-  border-radius: 9px 0px 0 9px;
+  /* border-radius: 9px 0px 0 9px; */
 }
 
 button {
@@ -55,8 +55,6 @@ button {
 }
 
 a {
-  display: flex;
- 
   text-decoration: none;
   color: var(--color-textWhite);
   font-family: var(--ff-text);
@@ -80,6 +78,7 @@ i {
 
   /* Color */
   --color-prim: #4caf50;
+  --color-light-prim: #83d486;
   --color-textWhite: #fff;
 
   /* Background Color  */
@@ -101,6 +100,11 @@ header {
   
 }
 
+.toggle_menu{
+ color: var(--color-textWhite);
+ display: none; /*mode responsive - replacer en display block - flex*/
+}
+
 .container_nav {
   height: 100%;
   display: flex;
@@ -110,7 +114,7 @@ header {
 }
 
 .container_nav .block_logo {
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
   text-transform: uppercase;
 }
 
@@ -120,7 +124,7 @@ header {
 
 .block_search {
   height: 100%;
-  width: 54%;
+  width: 60%;
   display: flex;
   align-items: center;
 }
@@ -134,6 +138,19 @@ header {
 .block_search input {
   height: 2.525rem;
   width: 100%;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+.block_search .loop{
+  background-color: var(--color-prim);
+  height: 2.525rem;
+  width: 9%;
+  padding: 0 1rem 0 1rem;
+  border-radius: 0 5px 5px 0;
+  color: var(--color-textWhite);
+  display: none; /*mode responsive replacer en display block - flex*/
 }
 
 .block_search button {
@@ -145,14 +162,19 @@ header {
   font-weight: 800;
   font-family: var(--ff-text);
   text-transform: uppercase;
+  
 }
 
-.block_account {
+.block_account  {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 22%;
+}
+
+.user, .log, .cart{
+  display: flex;
 }
 
 .cart {
@@ -178,19 +200,31 @@ nav{
 .block_nav{
     background-color: var(--color-prim);
     width: 21%;
+    height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: var(--color-textWhite);
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.1rem;
+    margin: 0 0 0 2rem;
+}
+
+.block_nav .fa-bars-staggered{
+  background-color: var(--color-light-prim);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+ padding: 0.6rem;
 }
 
 .block_nav p {
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
+  padding-left: 1rem;
 }
 
 .block_link{
@@ -200,9 +234,15 @@ nav{
     flex-wrap: wrap;
     color: var(--color-textWhite);
     text-align: center;
-    width: 32%;
+    width: 60%;
 }
 
 .block_link a{
     font-weight: 500;
 }
+
+
+ 
+  
+  
+  

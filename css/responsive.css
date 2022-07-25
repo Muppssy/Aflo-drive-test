@@ -1,0 +1,53 @@
+@media screen and (max-width: 1590px) {
+  .block_search {
+    width: 52%;
+  }
+
+  .block_account {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  .block_search {
+    width: 45%;
+  }
+
+  .block_account {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .block_search {
+    width: 40%;
+  }
+
+  .block_account {
+    width: 36%;
+  }
+
+  a > .user_text {
+    transform: translateX(-75px);
+    /* visibility: hidden; */
+    transition: all 0.75s;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  a:hover > .user_text {
+    transform: translateX(0);
+    visibility: visible;
+    z-index: 0;
+  }
+
+  button {
+    display: none;
+  }
+
+  .block_search .loop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

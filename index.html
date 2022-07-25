@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="container_nav">
+        <div class="toggle_menu">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
         <div class="block_logo">
           <h1>Aflo <span>drive</span></h1>
         </div>
 
         <form class="block_search">
-          <!-- <select class="selected" id="...">
+          <select class="selected" id="...">
             <option value="">--Nos produits--</option>
             <option value="p1">Produit1</option>
             <option value="p2">Produit2</option>
@@ -23,17 +27,25 @@
             <option value="p4">Produit4</option>
             <option value="p5">Produit5</option>
             <option value="p6">Produit6</option>
-          </select> -->
-          <input type="text" />
-          <button>rechercher</button>
+          </select>
+          <input type="text" placeholder="Vous recherchez un produit ..." />
+
+          <a href="#" class="loop">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </a>
+          
+          <button type="submit">rechercher</button>
         </form>
 
         <div class="block_account">
           <a href="#" class="log">
+
             <i class="fa-solid fa-arrow-right-from-bracket fa-lg"></i>
+
             <div class="user_text">
               <p class="text_account">S'enregistrer</p>
             </div>
+
           </a>
 
           <a href="#" class="user">
@@ -50,13 +62,14 @@
             <div class="user_text">
               <p class="text_account">Panier</p>
             </div>
+          
           </a>
         </div>
       </div>
 
       <nav>
         <div class="block_nav">
-          <i class="fa-solid fa-bars-staggered fa-lg"></i>
+          <i class="fa-solid fa-bars-staggered "></i>
           <p>Nos Produit</p>
         </div>
 
@@ -64,6 +77,7 @@
           <a href="#"> Nos Promotions</a>
           <a href="#">Nos bons plans</a>
           <a href="#">Produits habituels</a>
+          
         </div>
       </nav>
     </header>
