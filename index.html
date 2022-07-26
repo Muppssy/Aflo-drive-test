@@ -19,15 +19,7 @@
         </div>
 
         <form class="block_search">
-          <select class="selected" id="...">
-            <option value="">--Nos produits--</option>
-            <option value="p1">Produit1</option>
-            <option value="p2">Produit2</option>
-            <option value="p3">Produit3</option>
-            <option value="p4">Produit4</option>
-            <option value="p5">Produit5</option>
-            <option value="p6">Produit6</option>
-          </select>
+        
           <input type="text" placeholder="Vous recherchez un produit ..." />
 
           <a href="#" class="loop">
@@ -37,7 +29,7 @@
           <button type="submit">rechercher</button>
         </form>
 
-        <div class="block_account">
+        <div class="block_account" data-function="s'enregistrer">
           <a href="#" class="log">
 
             <i class="fa-solid fa-arrow-right-from-bracket fa-lg"></i>
@@ -48,7 +40,7 @@
 
           </a>
 
-          <a href="#" class="user">
+          <a href="#" class="user" data-function="se connecter">
             <i class="fa-regular fa-user fa-lg"></i>
             <div class="user_text">
              
@@ -56,7 +48,7 @@
             </div>
           </a>
 
-          <a href="#" class="cart">
+          <a href="#" class="cart" data-function="panier">
             <i class="fa-solid fa-cart-shopping fa-lg"></i>
             <span class="item_number">0</span>
             <div class="user_text">
@@ -69,7 +61,7 @@
 
       <nav>
         <div class="block_nav">
-          <i class="fa-solid fa-bars-staggered "></i>
+          <i class="fa-solid fa-bars-staggered produit "></i>
           <p>Nos Produit</p>
         </div>
 
@@ -77,11 +69,14 @@
           <a href="#"> Nos Promotions</a>
           <a href="#">Nos bons plans</a>
           <a href="#">Produits habituels</a>
+          <a href="#">Recrutement</a>
+          <a href="#">Course rapide</a>
           
         </div>
       </nav>
     </header>
   </body>
+  <script src="js/script.js"></script>
   <script
     src="https://kit.fontawesome.com/96625a3117.js"
     crossorigin="anonymous"
