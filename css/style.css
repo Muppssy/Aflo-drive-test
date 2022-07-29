@@ -1,5 +1,5 @@
 /* Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 /* =========== */
 
@@ -8,12 +8,14 @@ html {
   font-size: 100%;
 }
 
-nav{
-    background-color: var(--bg-color-nav);
-    height: 5vh;
-    border-top: 1px solid gray;
-    
+section {
+  height: 100vh;
+}
 
+nav {
+  background-color: var(--bg-color-nav);
+  height: 5vh;
+  border-top: 1px solid gray;
 }
 
 h1 {
@@ -27,7 +29,6 @@ h1 {
 .text_account {
   padding: 0 0 0.4rem 0;
   font-size: 0.9em;
-
 }
 
 span {
@@ -53,6 +54,9 @@ button {
   padding: 0;
   border-width: 0;
 }
+li {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
@@ -60,7 +64,8 @@ a {
   font-family: var(--ff-text);
 }
 
-.log, .user{
+.log,
+.user {
   padding: 0 1rem 0 0;
 }
 
@@ -69,9 +74,7 @@ i {
   display: flex;
 }
 
-
 :root {
-    
   /* Variable font logo*/
   --ff-logo: "Josefin Sans", sans-serif;
   --ff-text: "Poppins", sans-serif;
@@ -87,7 +90,6 @@ i {
 }
 /* ====================== */
 
-
 /* === HEADER === */
 * {
   margin: 0;
@@ -98,12 +100,11 @@ i {
 header {
   height: auto;
   background-color: var(--bg-color-nav);
-  
 }
 
-.toggle_menu{
- color: var(--color-textWhite);
- display: none; /*mode responsive - replacer en display block - flex*/
+.toggle_menu {
+  color: var(--color-textWhite);
+  display: none; /*mode responsive - replacer en display block - flex*/
 }
 
 .container_nav {
@@ -141,10 +142,9 @@ header {
   width: 100%;
   text-align: center;
   font-size: 1em;
-
 }
 
-.block_search .loop{
+.block_search .loop {
   background-color: var(--color-prim);
   height: 2.525rem;
   width: 9%;
@@ -163,10 +163,9 @@ header {
   font-weight: 800;
   font-family: var(--ff-text);
   text-transform: uppercase;
-  
 }
 
-.block_account  {
+.block_account {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,7 +173,9 @@ header {
   width: 22%;
 }
 
-.user, .log, .cart{
+.user,
+.log,
+.cart {
   display: flex;
 }
 
@@ -193,32 +194,32 @@ a:hover > i {
   color: var(--color-textWhite);
 }
 
-nav{
-    display: flex;
-    justify-content: flex-start
+nav {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.block_nav{
-    background-color: var(--color-prim);
-    width: 21%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: var(--color-textWhite);
-    cursor: pointer;
-    padding: 1.1rem;
-    margin: 0 0 0 2rem;
+.block_nav {
+  background-color: var(--color-prim);
+  width: 21%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-textWhite);
+  cursor: pointer;
+  padding: 1.1rem;
+  margin: 0 0 0 2rem;
 }
 
-.block_nav .fa-bars-staggered{
+.block_nav .fa-bars-staggered {
   background-color: var(--color-light-prim);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+
   border-radius: 50%;
- padding: 0.6rem;
+  padding: 0.6rem;
 }
 
 .block_nav p {
@@ -228,22 +229,51 @@ nav{
   padding-left: 1rem;
 }
 
-.block_link{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: var(--color-textWhite);
-    text-align: center;
-    width: 60%;
+.block_link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--color-textWhite);
+  text-align: center;
+  width: 60%;
 }
 
-.block_link a{
-    font-weight: 500;
+.block_link a {
+  font-weight: 500;
 }
 
+.prod {
+  height: 100vh;
+}
+/* Section Produit et new article */
 
- 
+.container {
+  height: 100vh;
+  padding: 2rem 0 0 0;
+}
+
+.produit {
+  height: 96.3vh;
+  background-color: var(--bg-color-nav-burger);
+  width: 21%;
+  margin: 0 0 0 2rem;
+  padding: 1rem 0;
+  transition: all 0.75s;
+  margin: 0rem 0 0 2rem;
+}
+
+.produit ul li  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  border-bottom: 1px solid gray;
   
-  
-  
+}
+
+  .produit.menu_produit{
+  display: none;
+
+}
+

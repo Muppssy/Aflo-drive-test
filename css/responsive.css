@@ -78,6 +78,15 @@
     width: 100%;
     margin: 0;
   }
+
+  .produit{
+    width: 100%;
+    margin: 0;
+  }
+
+  .container{
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -93,7 +102,7 @@
 }
 
 .block_account{
-  padding: 0re, 0rem 0rem 0rem;
+  padding: 1.5rem
   
 }
 }

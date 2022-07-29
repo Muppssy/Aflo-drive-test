@@ -4,3 +4,10 @@ menuBurger.addEventListener('click', ()=>{
     navLink.classList.toggle('menu')
 })
 
+
+
+const menu = document.querySelector(".toggle_produit");
+const navProduit = document.querySelector(".produit")
+menu.addEventListener('click', ()=>{
+    navProduit.classList.toggle('menu_produit')
+})
