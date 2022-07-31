@@ -80,13 +80,14 @@ i {
   --ff-text: "Poppins", sans-serif;
 
   /* Color */
-  --color-prim: #4caf50;
-  --color-light-prim: #83d486;
+  --color-prim: #2196f3;
+  --color-light-prim: #64b4f5;
   --color-textWhite: #fff;
 
   /* Background Color  */
   --bg-color-nav: #353535;
   --bg-color-nav-burger: #525151;
+  --bg-color-nav-prod: #6e6e6e;
 }
 /* ====================== */
 
@@ -236,7 +237,7 @@ nav {
   flex-wrap: wrap;
   color: var(--color-textWhite);
   text-align: center;
-  width: 60%;
+  width: 50%;
 }
 
 .block_link a {
@@ -249,31 +250,35 @@ nav {
 /* Section Produit et new article */
 
 .container {
-  height: 100vh;
-  padding: 2rem 0 0 0;
+  height: 100vh; 
+  
 }
 
 .produit {
   height: 96.3vh;
-  background-color: var(--bg-color-nav-burger);
+  background-color: var(--bg-color-nav-prod);
   width: 21%;
-  margin: 0 0 0 2rem;
-  padding: 1rem 0;
+ 
+  /* padding: 1rem 0; */
   transition: all 0.75s;
   margin: 0rem 0 0 2rem;
+  display: none;
+  transition: all 0.75s;
+ 
 }
 
 .produit ul li  {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  min-height: 7vh;
   border-bottom: 1px solid gray;
-  
+  transition: all 0.75s;
 }
 
   .produit.menu_produit{
-  display: none;
+ display: block;
+ margin-top: 2rem;
 
 }
 
